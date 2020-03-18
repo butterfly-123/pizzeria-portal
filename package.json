@@ -11,10 +11,9 @@
     "react-scripts": "3.4.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "npm-run-all -p start:* ",
+    "start:react": "react-scripts start",
+    "start:api": "npm run build && node server.js"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -39,5 +38,8 @@
   "lint-staged": {
     "src/**/*.js": "eslint"
   },
-  "homepage": "/panel/"
+  "homepage": "/panel/",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
 }
