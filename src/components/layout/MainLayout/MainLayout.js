@@ -1,14 +1,13 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-
-const MainLayout = ({props}) => (
+import React from "react";
+import PropTypes from "prop-types";
+ 
+const MainLayout = ({ children }) => 
   <div>
-    {props.children}
-  </div>
-);
-
+    {children}
+  </div>;
+ 
 MainLayout.propTypes = {
-  children: PropTypes.node,
+  children: PropTypes.node
 };
-
+ 
 export default MainLayout;
