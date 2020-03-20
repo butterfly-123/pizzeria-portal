@@ -14,8 +14,6 @@ const PageNav = () =>
     <Link to={`${process.env.PUBLIC_URL}/tables`} activeClassName='active'>Tables</Link>
     <Link to={`${process.env.PUBLIC_URL}/tables/booking/:id`} activeClassName='active'>Tables</Link>
     <Link to={`${process.env.PUBLIC_URL}/tables/event/:id`} activeClassName='active'>Tables</Link>
-
-
   </nav>
  
 export default PageNav;
