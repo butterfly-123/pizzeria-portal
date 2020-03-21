@@ -3,7 +3,7 @@ import styles from './Ordering.scss';
 
 const Ordering = () => (
   <div className={styles.component}>
-    <h2>Login view</h2>
+    <h2>Ordering view</h2>
   </div>
 );
 

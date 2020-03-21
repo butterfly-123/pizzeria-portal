@@ -3,7 +3,7 @@ import styles from './Tables.scss';
 
 const Tables = () => (
   <div className={styles.component}>
-    <h2>Login view</h2>
+    <h2>Tables view</h2>
   </div>
 );
 

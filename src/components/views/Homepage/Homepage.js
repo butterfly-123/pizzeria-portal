@@ -3,7 +3,7 @@ import styles from './Homepage.scss';
 
 const Homepage = () => (
   <div className={styles.component}>
-    <h2>Login view</h2>
+    <h2>Homepage view</h2>
   </div>
 );
 

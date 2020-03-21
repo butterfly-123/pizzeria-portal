@@ -3,7 +3,7 @@ import styles from './Dashboard.scss';
 
 const Dashboard = () => (
   <div className={styles.component}>
-    <h2>Login view</h2>
+    <h2>Dashboard view</h2>
   </div>
 );
 
