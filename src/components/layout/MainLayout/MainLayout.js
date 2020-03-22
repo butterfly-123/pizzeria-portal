@@ -4,8 +4,8 @@ import PageNav from '../../layout/PageNav/PageNav';
  
 const MainLayout = ({ children }) => 
   <div>
-    {children}
     <PageNav />
+    {children}
   </div>;
  
 MainLayout.propTypes = {
