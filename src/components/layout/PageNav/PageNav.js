@@ -4,7 +4,7 @@ import { NavLink, } from 'react-router-dom';
 const PageNav = () => 
   <div>
     <nav>
-      <button>
+      <button color="primary" style={{ margin: 20 }}>
         <NavLink exact to={`${process.env.PUBLIC_URL}/`} activeClassName='active'>Dashboard</NavLink> 
       </button>
       <button>
