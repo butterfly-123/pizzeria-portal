@@ -10,8 +10,6 @@ import OrderingOrderID from './components/views/Ordering/OrderingOrderID';
 import Tables from './components/views/Tables/Tables';
 import TablesBookingID from './components/views/Tables/TablesBookingID';
 import TablesEventID from './components/views/Tables/TablesEventID';
-import { Button } from '@material-ui/core';
-
 
 function App() {
   return (
@@ -27,7 +25,6 @@ function App() {
           <Route exact path={process.env.PUBLIC_URL + '/tables'} component={Tables} />
           <Route exact path={process.env.PUBLIC_URL + '/tables/booking/:id'} component={TablesBookingID} />
           <Route exact path={process.env.PUBLIC_URL + '/tables/event/:id'} component={TablesEventID} />
-          <Button variant='outlined' size='small' color='secondary'>Click me</Button>
         </Switch>
       </MainLayout>
     </BrowserRouter>
