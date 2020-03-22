@@ -4,20 +4,20 @@ import { NavLink, } from 'react-router-dom';
 const PageNav = () => 
   <div>
     <nav>
-      <button color="primary" style={{ margin: 20 }}>
-        <NavLink exact to={`${process.env.PUBLIC_URL}/`} activeClassName='active'>Dashboard</NavLink> 
+      <button style={{ margin: 20, padding: 10, fontWeight: 'bold', textDecoration: 'none', backgroundColor: "white"}}>
+        <NavLink exact to={`${process.env.PUBLIC_URL}/`} activeClassName='active'>DASHBOARD</NavLink> 
       </button>
-      <button>
-        <NavLink to={`${process.env.PUBLIC_URL}/login`} activeClassName='active'>Login</NavLink> 
+      <button style={{ margin: 20, padding: 10, fontWeight: 'bold', textDecoration: 'none', backgroundColor: "white"}}>
+        <NavLink to={`${process.env.PUBLIC_URL}/login`} activeClassName='active'>LOGIN</NavLink> 
       </button>
-      <button>
-        <NavLink to={`${process.env.PUBLIC_URL}/kitchen`} activeClassName='active'>Kitchen</NavLink> 
+      <button style={{ margin: 20, padding: 10, fontWeight: 'bold', textDecoration: 'none', backgroundColor: "white"}}>
+        <NavLink to={`${process.env.PUBLIC_URL}/kitchen`} activeClassName='active'>KITCHEN</NavLink> 
       </button>
-      <button>
-        <NavLink to={`${process.env.PUBLIC_URL}/tables`} activeClassName='active'>Tables</NavLink> 
+      <button style={{ margin: 20, padding: 10, fontWeight: 'bold', textDecoration: 'none', backgroundColor: "white"}}>
+        <NavLink to={`${process.env.PUBLIC_URL}/tables`} activeClassName='active'>TABLES</NavLink> 
       </button>
-      <button>
-        <NavLink to={`${process.env.PUBLIC_URL}/ordering`} activeClassName='active'>Ordering</NavLink> 
+      <button style={{ margin: 20, padding: 10, fontWeight: 'bold', textDecoration: 'none', backgroundColor: "white"}}>
+        <NavLink to={`${process.env.PUBLIC_URL}/ordering`} activeClassName='active'>ORDERING</NavLink> 
       </button>
     </nav>
   </div>

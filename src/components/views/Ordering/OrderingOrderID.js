@@ -8,7 +8,7 @@ import Typography from '@material-ui/core/Typography';
 
 const OrderingOrderID = () => (
   <div className={styles.component}>
-    <h2>Order</h2>
+    <h2>Order delivered</h2>
 
     <Card className={styles.root}>
         <CardContent>
