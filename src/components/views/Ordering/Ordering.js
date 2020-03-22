@@ -12,17 +12,17 @@ const bull = <span className={styles.bullet}>•</span>;
 
 const Ordering = () => (
   <div className={styles.component}>
-    <h2>Ordering view</h2>
+    <h2>Ordering</h2>
     <div>
-      <Link to={`${process.env.PUBLIC_URL}/ordering/new`}>New Order</Link> <br />
-      <Link to={`${process.env.PUBLIC_URL}/ordering/order/:id`}>Order id</Link>
-
       <br /> 
       <br />
-        <Card className={styles.root}>
+        <Card className={styles.root}> 
         <CardContent>
           <Typography className={styles.title} color="inherit" gutterBottom>
             Table 1
+          </Typography>
+          <Typography className={styles.title} color="primary" gutterBottom>
+            Inactive
           </Typography>
           <Typography variant="h5" component="h2" color="secondary">
             for smo{bull}kers
@@ -38,15 +38,15 @@ const Ordering = () => (
             Place:
           </Typography>
           <Typography className={styles.title} color="primary" gutterBottom>
-            occupied: 0
+            occupied: 5
           </Typography>
           <Typography className={styles.title} color="primary" gutterBottom>
-            free: 2
+            free: 0
+          </Typography>
+          <Typography className={styles.title} color="primary" gutterBottom>
+            Date: 15.03.2020
           </Typography>
         </CardContent>
-        <CardActions>
-          <Button size="small" color='secondary'>New order</Button>
-        </CardActions>
       </Card>
 
       <br /> 
@@ -54,7 +54,10 @@ const Ordering = () => (
         <Card className={styles.root}>
         <CardContent>
           <Typography className={styles.title} color="inherit" gutterBottom>
-            Table 1
+            Table 2
+          </Typography>
+          <Typography className={styles.title} color="primary" gutterBottom>
+            Active
           </Typography>
           <Typography variant="h5" component="h2" color="secondary">
             for non{bull}smo{bull}kers
@@ -75,9 +78,14 @@ const Ordering = () => (
           <Typography className={styles.title} color="primary" gutterBottom>
             free: 1
           </Typography>
+          <Typography className={styles.title} color="primary" gutterBottom>
+            Date: 06.04.2020
+          </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small" color='secondary'>New order</Button>
+          <Link to={`${process.env.PUBLIC_URL}/ordering/new`} activeClassName='active' style={{ textDecoration: 'none', color: '#383A42' }}>
+            <Button size="small" color='secondary'>New order</Button>
+          </Link>
         </CardActions>
       </Card>
 
@@ -87,6 +95,9 @@ const Ordering = () => (
         <CardContent>
           <Typography className={styles.title} color="inherit" gutterBottom>
             Table 3
+          </Typography>
+          <Typography className={styles.title} color="primary" gutterBottom>
+            Active
           </Typography>
           <Typography variant="h5" component="h2" color="secondary">
             re{bull}ser{bull}va{bull}tion
@@ -107,9 +118,14 @@ const Ordering = () => (
           <Typography className={styles.title} color="primary" gutterBottom>
             free: 8
           </Typography>
+          <Typography className={styles.title} color="primary" gutterBottom>
+            Date: 30.03.2020
+          </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small" color='secondary'>New order</Button>
+          <Link to={`${process.env.PUBLIC_URL}/ordering/new`} activeClassName='active' style={{ textDecoration: 'none', color: '#383A42' }}>
+            <Button size="small" color='secondary'>New order</Button>
+          </Link>
         </CardActions>
       </Card>
 
@@ -119,6 +135,9 @@ const Ordering = () => (
         <CardContent>
           <Typography className={styles.title} color="inherit" gutterBottom>
             Table 4
+          </Typography>
+          <Typography className={styles.title} color="primary" gutterBottom>
+            Active
           </Typography>
           <Typography variant="h5" component="h2" color="secondary">
             for co{bull}u{bull}ples
@@ -139,9 +158,14 @@ const Ordering = () => (
           <Typography className={styles.title} color="primary" gutterBottom>
             free: 3
           </Typography>
+          <Typography className={styles.title} color="primary" gutterBottom>
+            Date: 01.04.2020
+          </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small" color='secondary'>New order</Button>
+          <Link to={`${process.env.PUBLIC_URL}/ordering/new`} activeClassName='active' style={{ textDecoration: 'none', color: '#383A42' }}>
+            <Button size="small" color='secondary'>New order</Button>
+          </Link>
         </CardActions>
       </Card>
     </div>
