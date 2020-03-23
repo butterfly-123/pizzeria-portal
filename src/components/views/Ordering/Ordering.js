@@ -27,6 +27,7 @@ const Ordering = () => (
           <Typography variant="h5" component="h2" color="secondary">
             for smo{bull}kers
           </Typography>
+          <img width='100px' heihgt='100px' alt='forSmokimg' src='https://www.galerialimonka.pl/pics/prod/znaczek-informacyjny-strefa-dla-palacych-indici-zack-zack-50720.jpg'></img>
           <Typography variant="body2" component="p">
             everything in place
             <br />
@@ -62,6 +63,7 @@ const Ordering = () => (
           <Typography variant="h5" component="h2" color="secondary">
             for non{bull}smo{bull}kers
           </Typography>
+          <img width='100px' heihgt='100px' alt='forNoSmoking' src='https://hhp-blog.s3.amazonaws.com/2019/02/iStock-941094224.jpg'></img>
           <Typography variant="body2" component="p">
             peace and quiet
             <br />
@@ -102,6 +104,7 @@ const Ordering = () => (
           <Typography variant="h5" component="h2" color="secondary">
             re{bull}ser{bull}va{bull}tion
           </Typography>
+          <img width='200px' height='100px' alt='reservation' src='https://lh3.googleusercontent.com/proxy/3t8tTnsuFBRdGAjLPhshGvisFvjnvjDKZvlO9WjAbGwVZalGo9OrBc4a_Y_ICiUrJQu5U6AWUkYJi6sLuhPcA52GiJjZ1Lpr52NYfaSe_Fnou6fSjvaxRQkt7QkPZTlv3b1ENNvKgPNH838-lBMvxrLd1s8F8w'></img>
           <Typography variant="body2" component="p">
             enough space
             <br />
@@ -142,6 +145,7 @@ const Ordering = () => (
           <Typography variant="h5" component="h2" color="secondary">
             for co{bull}u{bull}ples
           </Typography>
+          <img width='200px' height='100px' alt='forCouples' src='https://image.shutterstock.com/image-illustration/two-person-served-table-260nw-78669565.jpg'></img>
           <Typography variant="body2" component="p">
             clean and tidy
             <br />
