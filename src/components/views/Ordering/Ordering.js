@@ -16,7 +16,7 @@ const Ordering = () => (
     <div>
       <br /> 
       <br />
-        <Card className={styles.root} backgroundColor="secondary"> 
+        <Card className={styles.root} style={{ backgroundColor: '#FFEBCD' }}> 
         <CardContent>
           <Typography className={styles.title} color="inherit" gutterBottom>
             Table 1
