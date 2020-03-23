@@ -1,8 +1,9 @@
+import Axios from "axios";
+import { api } from "../settings";
+
 /* selectors */
 export const getAllProducts = ({products}) => products.data;
 export const getProductsLoadingState = ({products}) => products.loading;
-// import Axios from "axios";
-// import { api } from "../settings";
 
 /* action name creator */
 const reducerName = 'products';
@@ -18,23 +19,23 @@ export const fetchProductsStarted = payload => ({ payload, type: FETCH_ALL_START
 export const fetchProductsSuccess = payload => ({ payload, type: FETCH_ALL_SUCCESS });
 export const fetchProductsError = payload => ({ payload, type: FETCH_ALL_ERROR });
 
-// /* thunk creators */
-// export const fetchProductsFromAPI = () => {
-//   return (dispatch, getState) => {
-//     if(getState().products.data.length == 0){
-//       dispatch(fetchProductsStarted());
+/* thunk creators */
+export const fetchProductsFromAPI = () => {
+  return (dispatch, getState) => {
+    if(getState().products.data.length === 0){
+      dispatch(fetchProductsStarted());
 
-//       Axios
-//         .get(`${api.url}/${api.product}`)
-//         .then(res => {
-//           dispatch(fetchProductsSuccess(res.data));
-//         })
-//         .catch(err => {
-//           dispatch(fetchProductsError(err.message || true));
-//         });
-//     }
-//   };
-// };
+      Axios
+        .get(`${api.url}/${api.product}`)
+        .then(res => {
+          dispatch(fetchProductsSuccess(res.data));
+        })
+        .catch(err => {
+          dispatch(fetchProductsError(err.message || true));
+        });
+    }
+  };
+};
 
 /* reducer */
 export default function reducer(statePart = [], action = {}) {

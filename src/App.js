@@ -12,6 +12,7 @@ import TablesBookingID from './components/views/Tables/TablesBookingID';
 import TablesEventID from './components/views/Tables/TablesEventID';
 import { Provider } from 'react-redux';
 import store from './redux/store';
+// import NewOrderContainer from './components/views/Ordering/NewOrderContainer';
 
 function App() {
   return (
