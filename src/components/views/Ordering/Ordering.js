@@ -16,7 +16,7 @@ const Ordering = () => (
     <div>
       <br /> 
       <br />
-        <Card className={styles.root} style={{ backgroundColor: '#FFEBCD' }}> 
+        <Card className={styles.root} backgroundColor="secondary"> 
         <CardContent>
           <Typography className={styles.title} color="inherit" gutterBottom>
             Table 1
@@ -104,7 +104,7 @@ const Ordering = () => (
           <Typography variant="h5" component="h2" color="secondary">
             re{bull}ser{bull}va{bull}tion
           </Typography>
-          <img width='200px' height='100px' alt='reservation' src='https://lh3.googleusercontent.com/proxy/3t8tTnsuFBRdGAjLPhshGvisFvjnvjDKZvlO9WjAbGwVZalGo9OrBc4a_Y_ICiUrJQu5U6AWUkYJi6sLuhPcA52GiJjZ1Lpr52NYfaSe_Fnou6fSjvaxRQkt7QkPZTlv3b1ENNvKgPNH838-lBMvxrLd1s8F8w'></img>
+          <img width='200px' height='100px' alt='reservation' src='https://glimpsecorp.wpengine.com/wp-content/uploads/2018/05/iStock-643847822.jpg'></img>
           <Typography variant="body2" component="p">
             enough space
             <br />
